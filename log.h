@@ -17,8 +17,7 @@ char* read_file(char* path)
 	fseek(file, 0L, SEEK_SET);
 	// read file
 	char* buff = malloc(len);
-	for (int i = 0; i < len; i++)
-	{
+	for (int i = 0; i < len; i++) {
 		buff[i] = fgetc(file);
 	}
 	fclose(file);
